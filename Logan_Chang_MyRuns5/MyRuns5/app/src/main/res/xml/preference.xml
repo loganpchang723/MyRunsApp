@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Account Preferences -->
+    <androidx.preference.PreferenceCategory
+        android:title="@string/account_pref_label">
+
+        <androidx.preference.PreferenceScreen
+            android:title="@string/pref_profile"
+            android:summary="@string/pref_profile_subtext">
+            <intent
+                android:action="com.loganchang.MyRuns5.UserProfileActivity" />
+        </androidx.preference.PreferenceScreen>
+
+        <androidx.preference.CheckBoxPreference
+            android:key="privacy_setting_checkbox_preference"
+            android:title="@string/pref_privacy"
+            android:summary="@string/pref_privacy_subtext" />
+    </androidx.preference.PreferenceCategory>
+    <!-- Additional Settings -->
+    <androidx.preference.PreferenceCategory
+        android:title="@string/additional_setting_label">
+
+        <androidx.preference.ListPreference
+            android:key="@string/unit_preference"
+            android:title="@string/pref_unit"
+            android:summary="@string/pref_unit_subtext"
+            android:entries="@array/unit_preference_options"
+            android:entryValues="@array/unit_preference_values"
+            android:dialogTitle="@string/pref_unit" />
+
+        <androidx.preference.EditTextPreference
+            android:key="comment_preference"
+            android:inputType="text"
+            android:title="@string/pref_comments"
+            android:summary="@string/pref_comments_subtext" />
+    </androidx.preference.PreferenceCategory>
+    <!-- Misc. -->
+    <androidx.preference.PreferenceCategory
+        android:title="@string/misc_label">
+
+        <androidx.preference.PreferenceScreen
+            android:title="@string/pref_webpage"
+            android:summary="@string/pref_webpage_subtext">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://www.cs.dartmouth.edu/~xingdong/Teaching/CS65/web/cs65.html" />
+        </androidx.preference.PreferenceScreen>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

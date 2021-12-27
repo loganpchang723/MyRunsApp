@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/photo_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/imageProfile"
+                android:text="@string/photo_label" />
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="25dp"
+                android:onClick="onChangePhotoClicked"
+                android:text="@string/photo_button" />
+
+        </LinearLayout>
+
+
+        <!--Name-->
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/name_field"
+            android:text="@string/name_label" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:inputType="textCapWords" />
+        <!--Email-->
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/email_field"
+            android:text="@string/email_label" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+        <!--Phone-->
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/phone_field"
+            android:text="@string/phone_label" />
+
+        <EditText
+            android:id="@+id/phone_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_hint"
+            android:inputType="phone" />
+        <!--Gender-->
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/gender_button_group"
+            android:text="@string/gender_label" />
+
+        <RadioGroup
+            android:id="@+id/gender_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:text="@string/gender_female" />
+            <!--android:onClick="onRadioButtonClicked"/>-->
+            <RadioButton
+                android:id="@+id/male_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male" />
+            <!--android:onClick="onRadioButtonClicked"/>-->
+        </RadioGroup>
+        <!--Class-->
+        <TextView
+            android:id="@+id/class_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/class_field"
+            android:text="@string/class_label" />
+
+        <EditText
+            android:id="@+id/class_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/class_hint"
+            android:inputType="number" />
+        <!--Major-->
+        <TextView
+            android:id="@+id/major_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/major_field"
+            android:text="@string/major_label" />
+
+        <EditText
+            android:id="@+id/major_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/major_hint"
+            android:inputType="text" />
+        <!--Bottom Buttons-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:onClick="saveProfile"
+                android:text="@string/save_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="onCancelButton"
+                android:text="@string/cancel_button" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

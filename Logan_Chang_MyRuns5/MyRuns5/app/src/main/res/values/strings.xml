@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">Logan Chang MyRuns5</string>
+    <!-- Toast for UI -->
+    <string name="toast_save">Saved</string>
+
+    <!--MAIN ACTIVITY-->
+    <!-- Tab Strings -->
+    <string name="tab_start">START</string>
+    <string name="tab_history">HISTORY</string>
+    <string name="tab_settings">SETTINGS</string>
+
+    <!--START FRAGMENT-->
+
+    <!-- Spinner Label-->
+    <string name="input_type_label">Input Type</string>
+    <string name="activity_type_label">Activity Type</string>
+
+    <!-- Button Text -->
+    <string name="start_button">Start</string>
+    <string name="sync_button">Sync</string>
+
+    <!-- Spinner Options -->
+    <string-array name="input_type_spinner_list">
+        <item>Manual Entry</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string-array name="activity_type_spinner_list">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Country Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--SETTINGS FRAGMENT -->
+
+    <!-- Section Labels-->
+    <string name="account_pref_label">Account Preferences</string>
+    <string name="additional_setting_label">Additional Settings</string>
+    <string name="misc_label">Misc.</string>
+
+    <!-- Subsection Labels and Subtext -->
+    <string name="pref_profile">Name, Email, Class, etc</string>
+    <string name="pref_profile_subtext">User Profile</string>
+
+    <string name="pref_privacy">Privacy Setting</string>
+    <string name="pref_privacy_subtext">Posting your records anonymously</string>
+
+    <string name="pref_unit">Unit Preference</string>
+    <string name="pref_unit_subtext">Select the units</string>
+    <string name="unit_preference">unit_preference</string>
+    <string name="unit_km">Kilometers</string>
+    <string name="unit_miles">Miles</string>
+
+    <string-array name="unit_preference_options">
+        <item>Metric (Kilometers)</item>
+        <item>Imperial (Miles)</item>
+    </string-array>
+
+    <string-array name="unit_preference_values">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+
+
+    <string name="pref_comments">Comments</string>
+    <string name="pref_comments_subtext">Please enter your comments</string>
+
+    <string name="pref_webpage">Webpage</string>
+    <string name="pref_webpage_subtext">https://www.cs.dartmouth.edu/~xingdong/Teaching/CS65/web/cs65.html</string>
+
+    <!--SAVE, CANCEL, OK, DELETE BUTTONS AND RELATED MESSAGES -->
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="manual_cancel_msg">Entry Discarded</string>
+    <string name="ok_button">OK</string>
+    <string name="delete_button">Delete</string>
+
+    <!--DIALOG FRAGMENT-->
+
+    <!--Text Fragment Titles-->
+    <string name="date_dialog_title">Date</string>
+    <string name="time_dialog_title">Time</string>
+    <string name="duration_dialog_title">Duration</string>
+    <string name="distance_dialog_title">Distance</string>
+    <string name="calories_dialog_title">Calories</string>
+    <string name="heartrate_dialog_title">Heart Rate</string>
+    <string name="comment_dialog_title">Comment</string>
+    <string name="comment_dialog_hint">How did it go? Notes here.</string>
+
+    <!-- Photo Choosing Dialog -->
+    <string name="photo_dialog_title">"Select Profile Image"</string>
+    <string-array name="photo_dialog_options">
+        <item>Take picture from camera</item>
+        <item>Choose picture from gallery</item>
+    </string-array>
+
+    <!--USER PROFILE ACTIVITY-->
+    <string name="name_hint">Your Name</string>
+    <string name="name_label">Name</string>
+
+    <string name="email_hint">Your Email</string>
+    <string name="email_label">Email</string>
+
+    <string name="phone_hint">Your Phone Number</string>
+    <string name="phone_label">Phone</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_label">Gender</string>
+
+    <string name="class_hint">e.g. 2021</string>
+    <string name="class_label">Class</string>
+
+    <string name="major_hint">Your Major</string>
+    <string name="major_label">Major</string>
+
+    <string name="name_key">name_KEY</string>
+    <string name="email_key">email_KEY</string>
+    <string name="phone_key">phone_KEY</string>
+    <string name="gender_key">gender_KEY</string>
+    <string name="class_key">class_KEY</string>
+    <string name="major_key">major_KEY</string>
+    <string name="male_key">male_KEY</string>
+    <string name="female_key">female_KEY</string>
+    <string name="photo_key">photo_KEY</string>
+
+    <string name="photo_label">Profile Photo</string>
+    <string name="photo_button">Change</string>
+
+    <string name="tempRawImgFileName">tempRawProfImg.jpg</string>
+    <string name="tempCropImgFileName">tempCropProfImg.jpg</string>
+    <string name="showImgFileName">showProfImg.jpg</string>
+    <string name="saveImgFileName">saveProfImg.jpg</string>
+
+    <!--HISTORY ENTRY ACTIVITY-->
+    <string name="input_label">Input Type</string>
+    <string name="activity_label">Activity Type</string>
+    <string name="date_time_label">Date and Time</string>
+    <string name="duration_label">Duration</string>
+    <string name="distance_label">Distance</string>
+    <string name="calorie_label">Calories</string>
+    <string name="heartrate_label">Heart Rate</string>
+    <string name="title_activity_map_display">Map</string>
+</resources>

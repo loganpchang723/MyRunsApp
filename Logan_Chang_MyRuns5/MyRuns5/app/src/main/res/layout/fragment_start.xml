@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Input type -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/input_type_label"/>
+
+        <Spinner
+            android:id="@+id/start_input_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/input_type_spinner_list"/>
+
+        <!-- Activity type -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/activity_type_label"/>
+
+        <Spinner
+            android:id="@+id/start_activity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/activity_type_spinner_list" />
+
+        <!--Bottom Buttons-->
+
+        <Button
+            android:id="@+id/start_start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/start_button"/>
+
+        <Button
+            android:id="@+id/start_sync_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/sync_button"/>
+
+    </LinearLayout>
+
+</ScrollView>
